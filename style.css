@@ -404,6 +404,11 @@ MODAL
 .modal__language--img {
     width: 100%;
 }
+.modal__language--img2 {
+    width: 125%;
+    height: 125%;
+   
+}
 
 .modal__contact {
     background-color: #242424;
