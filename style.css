@@ -85,12 +85,13 @@ input:focus, textarea:focus {
 .click:hover {
     transform: scale(1.1);
 }
+
 .click:active {
     transform: scale(0.8);
 }
 
 .title {
-    font-size: 120px;
+    font-size: 60px;
     margin-bottom: 12px;
     text-align: left;
     line-height: 1;
@@ -98,6 +99,11 @@ input:focus, textarea:focus {
 
 .highlight {
     color: rgb(42, 156, 93) !important;
+}
+
+.author-pic {
+    width: 375px;
+    height: 500px;
 }
 
 .link__hover-effect {
@@ -123,7 +129,6 @@ input:focus, textarea:focus {
     background-color: #242424;
 }
 
-
 .link__hover-effect:hover:after {
     left: 0;
     width: 100%;
@@ -142,17 +147,15 @@ nav, .scroll, .header {
     transition: all 400ms;
 }
 
-
 .dark-theme .title, 
 .dark-theme .section__title, 
 .dark-theme .section__sub-title, 
 .dark-theme .nav__link--anchor,
 .dark-theme .fa-circle-half-stroke,
 .dark-theme .header__para {
- color: white;
+    color: white;
 }
     
-
 .dark-theme section {
     background-color: #242424;
 }
@@ -198,6 +201,9 @@ LANDING PAGE
     width: 100%;
     max-width: 1000px;
     padding: 0 30px;
+   
+    display: flex;
+    justify-content: space-between;
 }
 
 .header__para {
@@ -338,7 +344,7 @@ MODAL
     transition: visibility 1s, z-index 1s, box-shadow 0.5s ease;
 }
 
-.modal__open .modal {
+.modal--open .modal {
     z-index: 60;
     box-shadow: 0 20px 80px 0 rgb(0, 0, 0, 0.55);
     visibility: visible;
@@ -354,8 +360,8 @@ MODAL
     transition: all 300ms ease-in;
 }
 
-.modal__open .modal__about,
-.modal__open .modal__contact {
+.modal--open .modal__about,
+.modal--open .modal__contact {
     transform: translateX(0%);
 }
 
