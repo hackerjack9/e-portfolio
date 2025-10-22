@@ -200,8 +200,8 @@ LANDING PAGE
     transform: translate(-50%, -50%);
     width: 100%;
     max-width: 1000px;
+    height: 60vh;
     padding: 0 30px;
-   
     display: flex;
     justify-content: space-between;
 }
@@ -697,13 +697,52 @@ width = 80vw
     left: 80vw;
 }
 
-/* small phones, tablets, large smart phones*/
-@media (max-width: 768px) {
-    .title {
-        font-size: 80px;
+
+@media (max-width: 1640px) {
+      .shape--3 {
+        left: 2vw;
+    }
+    .shape--5 {
+        right: 50vh;
+    }
+}
+@media (max-width: 1280px) {
+    .shape--3 {
+        left: 2vw;
+    }
+    .shape--4 {
+        right: 2vw;
+    }
+    .shape--5 {
+        left: 140vh;
+    }
+}
+
+@media (max-width: 1024px) {
+      .title {
+        font-size: 48px;
     }
     .header__para {
         font-size: 20px;
+        width: 85%;
+    }
+    .shape--3, .shape--4, .shape--5 {
+        display: none;
+    }
+}
+
+/* small phones, tablets, large smart phones*/
+@media (max-width: 768px) {
+    .title {
+        font-size: 44px;
+    }
+    .header__para {
+        font-size: 16px;
+        width: 85%;
+    }
+    .author-pic {
+        width: 55%;
+        height: 90%;
     }
     .modal {
         top: 0;
@@ -718,16 +757,45 @@ width = 80vw
     .modal__half {
         width: 100%;
     }
+
+    .shape--3, .shape--4, .shape--5 {
+        display: none;
+    }
 }
 
 /* small phones */
 @media (max-width: 480px) {
+
+    .header {
+        display: flex;
+        flex-direction: column;
+    }
     .title {
-        font-size: 52px;
+        font-size: 40px;
+        text-align: center;
     }
     .header__para {
-        font-size: 18px;
+        font-size: 14px;
+        text-align: center;
+        width: 80%;
+        margin-left: 40px;
+        margin-right: 34px;
     }
+   
+    .social_list {
+      
+        
+    }
+
+.author-pic {
+    width: 40%;
+    height: 45%;
+    padding: 12px;
+    align-self: center;
+}
+.section__title {
+    font-size: 30px;
+}
     .nav__link:first-child {
         display: none;
     }
@@ -746,4 +814,38 @@ width = 80vw
     .modal__half {
         padding: 40px;
     }
+
+.shape--0 {
+    top: 20vh;
+}
+.shape--1 {
+    top: 15vh;
+    left: 45vw;
+}
+.shape--2 {
+    top: 20vh;
+    left: 80vw;
+}
+.shape--3 {
+    top: 40vh;
+    left: 5vw;
+}
+.shape--4 {
+    top: 90vh;
+}
+.shape--5 {
+    top: 40vh;
+    left: 90vw;
+}
+.shape--6 {
+    top: 70vh;
+    left: 5vw;
+}
+.shape--7 {
+    display: none;
+}
+.shape--8 {
+    top: 70vh;
+    left: 80vw;
+}
 }
