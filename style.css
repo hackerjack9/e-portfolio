@@ -97,8 +97,8 @@ input:focus, textarea:focus {
     line-height: 1;
 }
 
-.highlight {
-    color: rgb(42, 156, 93) !important;
+.emphasis {
+    color: green;
 }
 
 .author-pic {
@@ -366,7 +366,7 @@ MODAL
 }
 
 .modal__about {
-    background-color: rgb(245, 245, 245);
+     background-image: linear-gradient(to right, rgb(99, 99, 237) , rgb(90, 242, 110));
     transform: translateX(-110%);
 }
 
@@ -438,8 +438,8 @@ MODAL
     padding: 12px 24px;
     color: white;
     cursor: pointer;
-    background-color: #f06449;
-    border: 2px solid #f06449;
+    background-image: linear-gradient(to right, rgb(99, 99, 237) , rgb(90, 242, 110));
+    border: transparent
     font-weight: bold;
     max-width: 240px;
     width: 100%;
