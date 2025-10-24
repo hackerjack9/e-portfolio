@@ -2,11 +2,7 @@
 //service_m6f29xu
 //3FKmnhiSj78ejdT1m
 
-
-
-
 let contrastToggle = false;
-
 
 function toggleContrast() {
     contrastToggle = !contrastToggle;
@@ -15,23 +11,8 @@ function toggleContrast() {
     }
     else {
         document.body.classList.remove("dark-theme")
-    }
-    
+    }   
 }
-
-const scaleFactor = 1 / 20;
-function moveBackground(event) {
-    const shapes = document.querySelectorAll(".shape");
-    const x = event.clientX * scaleFactor;
-    const y = event.clientY * scaleFactor;
-    
-    for (let i = 0; i < shapes.length; ++i) {
-        const isOdd = i % 2 !== 0;
-        const boolInt = isOdd ? -1 : 1;
-        shapes[i].style.transform = 'translate(${x * boolInt}px, ${y * boolInt}px)'
-    }
-}
-
 
 function contact(event) {
     event.preventDefault();
@@ -56,9 +37,6 @@ function contact(event) {
                 })
             }
 
-
-
-
 let isModalOpen = false;
 function toggleModal() {
         if (isModalOpen) {
@@ -68,3 +46,16 @@ function toggleModal() {
     isModalOpen = true;
     document.body.classList += " modal--open";
 }
+
+
+  const circles = document.querySelectorAll('.animated-bg .circle');
+  document.addEventListener('mousemove', (e) => {
+    const x = (e.clientX / window.innerWidth - 0.5) * 2; // range -1 to 1
+    const y = (e.clientY / window.innerHeight - 0.5) * 2;
+    circles.forEach((circle, index) => {
+      const speed = (index + 1) * 5; // each moves differently
+      circle.style.transform = `translate(${x * speed}px, ${y * speed}px)`;
+    });
+  });
+
+  

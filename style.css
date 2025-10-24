@@ -633,103 +633,101 @@ footer {
     color: white;
 }
 
-/*
-
-SHAPES
-
-shapes on the first row
-height = 15vh
-
-shapes on the second row
-height: 50vh
-
-shapes on the third row
-height: 80vh
-
-shapes on the first column
-width = 5vw
-
-shapes on the first column
-width = 50vw
-
-shapes on the first column
-width = 80vw
-
-*/
-
-.shape {
-    position: fixed;
-}
-.shape--0 {
-    top: 15vh;
-    left: 5vw;
-}
-.shape--1 {
-    top: 15vh;
-    left: 50vw;
-}
-.shape--2 {
-    top: 15vh;
-    left: 80vw;
-}
-.shape--3 {
-    top: 50vh;
-    left: 5vw;
-}
-.shape--4 {
-    top: 50vh;
-    left: 50vw;
-}
-.shape--5 {
-    top: 50vh;
-    left: 80vw;
-}
-.shape--6 {
-    top: 80vh;
-    left: 5vw;
-}
-.shape--7 {
-    top: 80vh;
-    left: 50vw;
-}
-.shape--8 {
-    top: 80vh;
-    left: 80vw;
+/* ===== Animated Responsive Background ===== */
+.animated-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1;
+  background: linear-gradient(135deg, #d9f7e7, #e3e3ff);
+  transition: background 600ms ease;
 }
 
-
-@media (max-width: 1640px) {
-      .shape--3 {
-        left: 2vw;
-    }
-    .shape--5 {
-        right: 50vh;
-    }
-}
-@media (max-width: 1280px) {
-    .shape--3 {
-        left: 2vw;
-    }
-    .shape--4 {
-        right: 2vw;
-    }
-    .shape--5 {
-        left: 140vh;
-    }
+.animated-bg .circle {
+  position: absolute;
+  border-radius: 50%;
+  background: radial-gradient(circle at 30% 30%, rgba(42,156,93,0.6), rgba(99,99,237,0.4));
+  animation: float 25s infinite ease-in-out;
+  opacity: 0.5;
+  transition: all 600ms ease;
 }
 
-@media (max-width: 1024px) {
-      .title {
-        font-size: 48px;
-    }
-    .header__para {
-        font-size: 20px;
-        width: 85%;
-    }
-    .shape--3, .shape--4, .shape--5 {
-        display: none;
-    }
+/* Circle positions for natural balance */
+.animated-bg .circle:nth-child(1) {
+  width: 180px;
+  height: 180px;
+  top: 10%;
+  left: 15%;
+  animation-delay: 0s;
 }
+.animated-bg .circle:nth-child(2) {
+  width: 250px;
+  height: 250px;
+  top: 40%;
+  left: 70%;
+  animation-delay: 5s;
+}
+.animated-bg .circle:nth-child(3) {
+  width: 150px;
+  height: 150px;
+  top: 75%;
+  left: 20%;
+  animation-delay: 10s;
+}
+.animated-bg .circle:nth-child(4) {
+  width: 300px;
+  height: 300px;
+  top: 20%;
+  left: 80%;
+  animation-delay: 15s;
+}
+.animated-bg .circle:nth-child(5) {
+  width: 120px;
+  height: 120px;
+  top: 60%;
+  left: 40%;
+  animation-delay: 20s;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0) translateX(0);
+  }
+  50% {
+    transform: translateY(-40px) translateX(40px);
+  }
+}
+
+/* ===== Dark Theme ===== */
+.dark-theme .animated-bg {
+  background: linear-gradient(135deg, #1a1a1a, #242424);
+}
+
+.dark-theme .animated-bg .circle {
+  background: radial-gradient(circle at 30% 30%, rgba(90,242,110,0.3), rgba(99,99,237,0.2));
+  opacity: 0.35;
+  filter: blur(4px);
+}
+
+/* ===== Responsive adjustments ===== */
+@media (max-width: 768px) {
+  .animated-bg .circle {
+    opacity: 0.3;
+    filter: blur(3px);
+  }
+}
+@media (max-width: 480px) {
+  .animated-bg .circle {
+    width: 100px !important;
+    height: 100px !important;
+    opacity: 0.25;
+  }
+}
+
+
 
 /* small phones, tablets, large smart phones*/
 @media (max-width: 768px) {
@@ -757,10 +755,6 @@ width = 80vw
     .modal__half {
         width: 100%;
     }
-
-    .shape--3, .shape--4, .shape--5 {
-        display: none;
-    }
 }
 
 /* small phones */
@@ -782,11 +776,6 @@ width = 80vw
         margin-right: 34px;
     }
    
-    .social_list {
-      
-        
-    }
-
 .author-pic {
     width: 40%;
     height: 45%;
@@ -814,38 +803,4 @@ width = 80vw
     .modal__half {
         padding: 40px;
     }
-
-.shape--0 {
-    top: 20vh;
-}
-.shape--1 {
-    top: 15vh;
-    left: 45vw;
-}
-.shape--2 {
-    top: 20vh;
-    left: 80vw;
-}
-.shape--3 {
-    top: 40vh;
-    left: 5vw;
-}
-.shape--4 {
-    top: 90vh;
-}
-.shape--5 {
-    top: 40vh;
-    left: 90vw;
-}
-.shape--6 {
-    top: 70vh;
-    left: 5vw;
-}
-.shape--7 {
-    display: none;
-}
-.shape--8 {
-    top: 70vh;
-    left: 80vw;
-}
 }
