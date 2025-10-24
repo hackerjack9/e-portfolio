@@ -47,15 +47,15 @@ function toggleModal() {
     document.body.classList += " modal--open";
 }
 
+  document.addEventListener("DOMContentLoaded", () => {
+    const circles = document.querySelectorAll(".animated-bg .circle");
 
-  const circles = document.querySelectorAll('.animated-bg .circle');
-  document.addEventListener('mousemove', (e) => {
-    const x = (e.clientX / window.innerWidth - 0.5) * 2; // range -1 to 1
-    const y = (e.clientY / window.innerHeight - 0.5) * 2;
-    circles.forEach((circle, index) => {
-      const speed = (index + 1) * 5; // each moves differently
-      circle.style.transform = `translate(${x * speed}px, ${y * speed}px)`;
+    document.addEventListener("mousemove", (e) => {
+      const x = (e.clientX / window.innerWidth - 0.5) * 2;
+      const y = (e.clientY / window.innerHeight - 0.5) * 2;
+      circles.forEach((circle, index) => {
+        const speed = (index + 1) * 10;
+        circle.style.transform = `translate(${x * speed}px, ${y * speed}px)`;
+      });
     });
   });
-
-  
