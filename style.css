@@ -98,12 +98,16 @@ input:focus, textarea:focus {
 }
 
 .emphasis {
-    color: green;
+    color: white;
 }
 
 .author-pic {
     width: 375px;
     height: 500px;
+}
+
+.highlight {
+    color: green;
 }
 
 .link__hover-effect {
@@ -373,6 +377,7 @@ MODAL
 .modal__languages {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center
 }
 
 .modal__language {
@@ -402,12 +407,9 @@ MODAL
 }
 
 .modal__language--img {
-    width: 100%;
-}
-.modal__language--img2 {
-    width: 125%;
-    height: 125%;
-   
+    width: 50px;
+    height: 60px;
+    background: white;
 }
 
 .modal__contact {
@@ -416,14 +418,20 @@ MODAL
     transform: translateX(110%);
 }
 
-.modal__title {
-    font-size: 26px;
+.modal__title--contact {
+    margin-bottom: 18px;
+
+}
+.modal__sub-title--contact {
+    margin-bottom: 8px;
 }
 
-.modal__sub-title {
-    margin: 12px 0 24px 0;
-    font-size: 14px;
+
+.modal__title {
+    font-size: 26px;
+    margin-bottom: 14px;
 }
+
 
 .modal__para {
     margin-bottom: 12px;
