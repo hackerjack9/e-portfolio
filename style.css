@@ -784,7 +784,29 @@ footer {
 
 /* small phones */
 @media (max-width: 480px) {
+  #landing-page {
+    height: clamp(600px, 100vh, 1000px);
+  }
+  
+    nav {
+        height: clamp(40px, 10vh, 60px);
+    }
 
+.social__list {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 65%;
+    left: 28%;
+}
+
+h1.title {
+    font-size: clamp(15px, 2vh, 40px)
+}
+.title.highlight {
+    font-size: clamp(10px, 2vh, 30px)
+}
+    
     .header {
         display: flex;
         flex-direction: column;
@@ -794,17 +816,17 @@ footer {
         text-align: center;
     }
     .header__para {
-        font-size: 14px;
+        font-size: clamp(10px, 2vh, 16px);
         text-align: center;
         width: 80%;
         margin-left: 40px;
         margin-right: 34px;
     }
    
-.author-pic {
-    width: 40%;
-    height: 45%;
-    padding: 12px;
+    .author-pic {
+     width: clamp(125px, 20vh, 150px);
+    height: clamp(175px, 20vw, 200px);
+    padding: 8px;
     align-self: center;
 }
 .section__title {
