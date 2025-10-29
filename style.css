@@ -721,51 +721,55 @@ footer {
   filter: blur(10px);
 }
 
-/* Responsive Adjustments */
+
+@media (max-width: 956px) {
+    .title {
+        font-size: 36px;
+    }
+    .title.highlight {
+        font-size: 36px;
+    }
+    .header__para {
+        font-size: 18px;
+        width: 80%;
+}
+
+}
+/* small phones, tablets, large smart phones*/
 @media (max-width: 768px) {
   .animated-bg .circle {
     opacity: 0.35;
     filter: blur(6px);
   }
-}
-@media (max-width: 480px) {
-  .animated-bg .circle {
-    width: 100px !important;
-    height: 100px !important;
-    opacity: 0.25;
+
+  h1.title {
+    font-size: 20px;
   }
-}
-
-
-/* ===== Responsive adjustments ===== */
-@media (max-width: 768px) {
-  .animated-bg .circle {
-    opacity: 0.3;
-    filter: blur(3px);
+  .title.highlight {
+    font-size: 20px;
   }
-}
-@media (max-width: 480px) {
-  .animated-bg .circle {
-    width: 100px !important;
-    height: 100px !important;
-    opacity: 0.25;
+
+  .header__content {
+    margin-top: 40px;
+    margin-left: 40px;
   }
-}
-
-
-
-/* small phones, tablets, large smart phones*/
-@media (max-width: 768px) {
+    .header {
+    height: 500px;
+    padding: 12px;
+    }
     .title {
-        font-size: 44px;
+        font-size: 32px;
     }
     .header__para {
-        font-size: 16px;
-        width: 85%;
+        font-size: 11px;
+        width: 80%;
+        height: 50%;
     }
     .author-pic {
-        width: 55%;
-        height: 90%;
+        width: 45%;
+        height: 80%;
+        margin-top: 40px;
+        margin-right: 40px;
     }
     .modal {
         top: 0;
@@ -776,75 +780,98 @@ footer {
         flex-direction: column-reverse;
         border-radius: 0;
     }
-
     .modal__half {
         width: 100%;
     }
 }
 
 /* ---------------------- small phones ---------------------- */ 
-@media (max-width: 480px) {
-  #landing-page {
-    height: clamp(600px, 100vh, 1000px);
+@media (max-width: 600px) {
+
+
+
+  .animated-bg .circle {
+    width: 100px !important;
+    height: 100px !important;
+    opacity: 0.25;
   }
-  
-    nav {
-        height: clamp(40px, 10vh, 60px);
+ 
+    #landing-page {
+    height: clamp(600px, 100vh, 1000px);
+    width: 90%;
+    margin: 0 auto;
+    padding: 12px;
+    
+  }
+
+  .header__content {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    height: 200px;
+  }
+
+  .social__list {
+    position: relative;
+    top: 3rem;
+    justify-content: center; 
+  }
+
+ nav {
+     height: clamp(30px, 10vh, 50px);
+     width: 100%;
+     margin-top: -12px;
+     margin-right: -24px;
     }
 
-    .nav__link--anchor {
-        font-size: 10px;
+.nav__link--anchor {
+     font-size: 10px;
     }
-  
-.social__list {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    top: 25%;
-    left: 5%;  
-    width: 24px; 
-    gap: 8px;
-}
 
 .social__link {
     font-size: 10px;
     width: 22px;
-    height: 22px
+    height: 22px;
 }
 
 h1.title {
-    font-size: clamp(15px, 2vh, 40px)
+    font-size: 12px;
+    margin-bottom: 0px;
 }
 .title.highlight {
-    font-size: clamp(10px, 2vh, 30px)
+    font-size: 12px;
 }
-    
     .header {
         display: flex;
-        flex-direction: column;
-        margin-top: -40px;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column-reverse;
+        width: 95%;
+        margin: 0 auto;
         text-align: center;
+        overflow: hidden;
+        height: clamp(400px, 100vh, 600px);
     }
-
-   
     .title {
         font-size: 40px;
         text-align: center;
     }
     .header__para {
-        font-size: clamp(10px, 2vh, 16px);
+        font-size: clamp(10px, 2.5vw, 14px);
+        width: 92%;
+        padding: 4px;
+        margin: 0 auto;
         text-align: center;
-        width: 80%;
-        margin-left: 24px;
-        margin-right: 34px;
+        line-height: 1.75;
     }
    
     .author-pic {
      width: clamp(125px, 20vh, 150px);
-    height: clamp(175px, 20vw, 200px);
-    padding: 8px;
+    height: clamp(175px, 20vh, 200px);
     align-self: center;
-    padding-bottom: 24px;
+    padding-bottom: 20px;
+    padding-top: 10px;
+    margin-left: 15%;
 }
 .section__title {
     font-size: 30px;
