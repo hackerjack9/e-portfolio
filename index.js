@@ -1,7 +1,3 @@
-//template_0e9d2ds
-//service_m6f29xu
-//3FKmnhiSj78ejdT1m
-
 let contrastToggle = false;
 
 function toggleContrast() {
@@ -32,7 +28,7 @@ function contact(event) {
             .catch(() => {
                  loading.classList.remove("modal__overlay--visible");
                  alert(
-                    "The email service is temporarily unavailable. Please contact me directly on lucekl03@gmail.com."
+                    "The email service is temporarily unavailable. Please contact me directly on lucekl03coder@gmail.com."
                  );
                 })
             }

@@ -788,7 +788,11 @@ footer {
 /* ---------------------- small phones ---------------------- */ 
 @media (max-width: 600px) {
 
-
+#personal-logo {
+    width: 40px;
+    height: 40px;
+    border: 2px solid rgb(42, 156, 93);
+}
 
   .animated-bg .circle {
     width: 100px !important;
@@ -897,7 +901,7 @@ h1.title {
     .mail__btn {
         position: absolute;
         width: 40px;
-        height: 40px;
+        height: 35px;
         bottom: 20px;
         right: 30px;
     }
