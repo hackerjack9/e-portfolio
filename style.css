@@ -526,6 +526,13 @@ PROJECTS
 
 */
 
+.section__title {
+    font-size: 48px;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
 .project__img {
     width: 100%;
     transition: all 600ms ease;
@@ -562,7 +569,7 @@ PROJECTS
     opacity: 0;
     transition: opacity 300ms, transform 450ms ease;
     color: white;
-    max-width: 550px;
+    max-width: 650px;
 }
 
 .project__wrapper:hover .project__wrapper--bg {
@@ -775,6 +782,14 @@ footer {
     }
     .modal__half {
         width: 100%;
+    }
+
+    .project__description--para {
+        font-size: 16px;
+    }
+    .project__description {
+        max-width: 500px;
+
     }
 }
 
