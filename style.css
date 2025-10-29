@@ -713,12 +713,12 @@ footer {
 
 /* Dark Theme Support */
 .dark-theme .animated-bg {
-  background: linear-gradient(135deg, #1a1a1a, #242424);
+  background: linear-gradient(135deg, #032526, #133e20);
 }
 .dark-theme .animated-bg .circle {
-  background: radial-gradient(circle at 30% 30%, rgba(90,242,110,0.25), rgba(99,99,237,0.15));
-  opacity: 0.4;
-  filter: blur(10px);
+  background: radial-gradient(circle at 30% 30%, rgba(162, 239, 168, 0.825), rgba(81, 183, 230, 0.887));
+  opacity: 5;
+  filter: blur(4px);
 }
 
 
@@ -901,9 +901,10 @@ h1.title {
     .mail__btn {
         position: absolute;
         width: 40px;
-        height: 35px;
+        height: 40px;
         bottom: 20px;
         right: 30px;
+        align-self: center;
     }
     .fa-envelope {
         position: relative;
