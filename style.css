@@ -867,7 +867,7 @@ h1.title {
    
     .author-pic {
      width: clamp(125px, 20vh, 150px);
-    height: clamp(175px, 20vh, 200px);
+    height: 200px;
     align-self: center;
     padding-bottom: 20px;
     padding-top: 10px;
