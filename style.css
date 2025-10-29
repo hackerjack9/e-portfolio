@@ -152,7 +152,6 @@ nav, .scroll, .header {
 }
 
 .dark-theme .title, 
-.dark-theme .section__title, 
 .dark-theme .section__sub-title, 
 .dark-theme .nav__link--anchor,
 .dark-theme .fa-circle-half-stroke,
@@ -163,11 +162,6 @@ nav, .scroll, .header {
 .dark-theme section {
     background-color: #242424;
 }
-
-.dark-theme #personal-logo {
-    filter: none;
-}
-
 .dark-theme .scroll__icon {
     border-color: white;
 }
@@ -240,12 +234,17 @@ LANDING PAGE
     height: 70px;
     font-size: 32px;
     border-radius: 50%;
-    border: none;
+    border: 1px solid white;
     background-color: #242424;
     color: white;
-    position: absolute;
+    position: fixed;
     bottom: 32px;
-    right: 40px;
+    right: 32px;
+    z-index: 10;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
 
 }
 
@@ -527,12 +526,6 @@ PROJECTS
 
 */
 
-.section__title {
-    text-align: center;
-    font-size: 48px;
-    margin-bottom: 60px;
-}
-
 .project__img {
     width: 100%;
     transition: all 600ms ease;
@@ -797,7 +790,7 @@ footer {
   .animated-bg .circle {
     width: 100px !important;
     height: 100px !important;
-    opacity: 0.25;
+    opacity: 0.5;
   }
  
     #landing-page {
@@ -877,9 +870,7 @@ h1.title {
     padding-top: 10px;
     margin-left: 15%;
 }
-.section__title {
-    font-size: 30px;
-}
+
     .nav__link:first-child {
         display: none;
     }
@@ -899,11 +890,11 @@ h1.title {
         padding: 40px;
     }
     .mail__btn {
-        position: absolute;
+        position: fixed;
         width: 40px;
         height: 40px;
         bottom: 20px;
-        right: 30px;
+        right: 20px;
         align-self: center;
     }
     .fa-envelope {
