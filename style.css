@@ -867,7 +867,7 @@ h1.title {
    
     .author-pic {
      width: clamp(125px, 20vh, 150px);
-    height: 200px;
+    height: 225px;
     align-self: center;
     padding-bottom: 20px;
     padding-top: 10px;
@@ -895,10 +895,11 @@ h1.title {
         padding: 40px;
     }
     .mail__btn {
-        width: 30px;
-        height: 30px;
-        bottom: 16px;
-        right: 16px;
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        bottom: 20px;
+        right: 30px;
     }
     .fa-envelope {
         position: relative;
